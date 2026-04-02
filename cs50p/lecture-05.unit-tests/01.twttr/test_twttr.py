@@ -1,14 +1,17 @@
+import pytest
+
 from twttr import shorten
 
 
-def test_twttr():
-    cases = [
-        ["twitter", "twttr"],
-        ["TWITTER", "twttr"],
-        ["twttr", "twttr"],
-        ["", ""],
-        ["Twitter", "twttr"],
-    ]
-    for case in cases:
-        input, expected = case
-        assert shorten(input) == expected
+@pytest.mark.parametrize(
+    "input_value, expected",
+    [
+        ("twitter", "twttr"),
+        ("TWITTER", "twttr"),
+        ("twttr", "twttr"),
+        ("", ""),
+        ("Twitter", "twttr"),
+    ],
+)
+def test_twttr(input_value, expected):
+    assert shorten(input_value) == expected
