@@ -4,7 +4,6 @@ import requests
 
 
 def main():
-
     if len(sys.argv) != 2:
         sys.exit("Missing command-line argument")
 
@@ -14,8 +13,8 @@ def main():
         response = requests.get(url)
         o = response.json()
         price = float(o["data"]["amount"])
-
         print(f"${price * n:,.4f}")
+
     except ValueError:
         sys.exit("Command-line argument is not a number")
 
