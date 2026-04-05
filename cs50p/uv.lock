@@ -76,6 +76,7 @@ source = { virtual = "." }
 dependencies = [
     { name = "cowsay" },
     { name = "emoji" },
+    { name = "fpdf" },
     { name = "inflect" },
     { name = "pillow" },
     { name = "pyfiglet" },
@@ -89,6 +90,7 @@ dependencies = [
 requires-dist = [
     { name = "cowsay", specifier = ">=6.1" },
     { name = "emoji", specifier = ">=2.15.0" },
+    { name = "fpdf", specifier = ">=1.7.2" },
     { name = "inflect", specifier = ">=7.5.0" },
     { name = "pillow", specifier = ">=12.2.0" },
     { name = "pyfiglet", specifier = ">=1.0.4" },
@@ -106,6 +108,12 @@ sdist = { url = "https://files.pythonhosted.org/packages/a2/78/0d2db9382c92a163d
 wheels = [
     { url = "https://files.pythonhosted.org/packages/e1/5e/4b5aaaabddfacfe36ba7768817bd1f71a7a810a43705e531f3ae4c690767/emoji-2.15.0-py3-none-any.whl", hash = "sha256:205296793d66a89d88af4688fa57fd6496732eb48917a87175a023c8138995eb", size = 608433, upload-time = "2025-09-21T12:13:01.197Z" },
 ]
+
+[[package]]
+name = "fpdf"
+version = "1.7.2"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/37/c6/608a9e6c172bf9124aa687ec8b9f0e8e5d697d59a5f4fad0e2d5ec2a7556/fpdf-1.7.2.tar.gz", hash = "sha256:125840783289e7d12552b1e86ab692c37322e7a65b96a99e0ea86cca041b6779", size = 39504, upload-time = "2015-01-21T00:07:47.493Z" }
 
 [[package]]
 name = "idna"
